@@ -533,3 +533,14 @@ body{
         font-size:2rem;
     }
 }
+.image-text{
+    background-image:url("images/cinnamon-bun.jpg");
+    background-size:cover;
+    background-position:center;
+
+    background-clip:text;
+    -webkit-background-clip:text;
+
+    color:transparent;
+    -webkit-text-fill-color:transparent;
+}
