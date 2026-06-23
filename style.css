@@ -125,6 +125,11 @@ body{
     color:#7c4d2d;
 
     font-weight:600;
+    text-decoration: none;
+    transition: box-shadow 0.8s ease;
+}
+.primary-btn:hover {
+    box-shadow: 0 0 12px 5px #FFFFFF;
 }
 
 /* ACTION CARDS */
@@ -150,7 +155,7 @@ body{
     box-shadow:
     0 8px 20px rgba(0,0,0,.05);
 
-    transition:.3s;
+    transition: box-shadow 0.8s ease;
 }
 
 .action-card:hover{
