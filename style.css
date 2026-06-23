@@ -2,7 +2,7 @@
     margin:0;
     padding:0;
     box-sizing: border-box;
-    animation: mango 2s linear infinite;
+    animation: mango 0.1s linear infinite;
 }
 @keyframes spin {
     from {
