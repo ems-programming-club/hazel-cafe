@@ -420,6 +420,49 @@ body{
     padding: 1rem 1.25rem;
 }
 
+/* SEASONAL SPECIALS */
+
+.specials-preview {
+    background: #fff7ec;
+    border: 1px dashed #d9b88a;
+    border-radius: 8px;
+    padding: 0.75rem 1rem;
+    margin-bottom: 1.25rem;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+}
+
+.specials-preview label {
+    font-size: 0.9rem;
+    color: #7b6758;
+}
+
+.specials-preview select {
+    padding: 0.4rem 0.75rem;
+    border-radius: 6px;
+    border: 1px solid #d9b88a;
+    background: white;
+    font-family: inherit;
+}
+
+.season-label {
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+    color: #6f4e37;
+}
+
+.sold-out {
+    opacity: 0.5;
+}
+
+.sold-out-tag {
+    color: #b04a4a;
+    font-style: italic;
+    font-size: 0.85rem;
+}
+
 @media(max-width:900px){
 
     .featured-showcase,
@@ -432,7 +475,6 @@ body{
         font-size:2.5rem;
     }
 }
-
 
 /* ==========================
    HOMEPAGE (in dashboard) FAQ SECTION
@@ -533,8 +575,9 @@ body{
         font-size:2rem;
     }
 }
+
 .image-text{
-    background-image:url("https://images.unsplash.com/photo-1509365465985-25d11c17e812?w=500&q=80";
+    background-image:url("https://images.unsplash.com/photo-1509365465985-25d11c17e812?w=500&q=80");
     background-size:cover;
     background-position:center;
 
@@ -545,12 +588,9 @@ body{
     -webkit-text-fill-color:transparent;
 }
 
-
 /* ==========================
    FAQ.html css
 ========================== */
-
-
 
 .faq-page{
     background:#f7f2eb;
@@ -559,6 +599,14 @@ body{
 .faq-hero{
     text-align:center;
     padding:80px 20px 50px;
+
+    background:linear-gradient(
+        135deg,
+        #6b4026,
+        #9d6d4b
+    );
+
+    color:white;
 }
 
 .faq-hero h1{
@@ -567,15 +615,15 @@ body{
 }
 
 .faq-hero p{
-    color:#6b5a4d;
+    color:rgba(255,255,255,.9);
     max-width:700px;
     margin:auto;
 }
 
 .faq-container{
     max-width:1000px;
-    margin:auto;
-    padding:0 25px 80px;
+    margin:60px auto 80px;
+    padding:0 25px;
 }
 
 .faq-item{
