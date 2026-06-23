@@ -2,7 +2,6 @@
     margin:0;
     padding:0;
     box-sizing: border-box;
-    animation: mango 0.1s linear infinite;
 }
 @keyframes spin {
     from {
@@ -11,15 +10,6 @@
 
     to {
         transform: rotate(360deg);
-    }
-}
-@keyframes mango {
-    from {
-        box-shadow: 0 0 1000px 250px #FFFFFF;
-    }
-
-    to {
-        box-shadow: 0 0 1000px 250px #FFFFFF;
     }
 }
 body{
