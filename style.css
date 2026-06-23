@@ -155,6 +155,7 @@ body{
 
 .action-card:hover{
     transform:translateY(-4px);
+    box-shadow: 0 0 12px 5px #FFFFFF;
 }
 
 .action-card h3{
