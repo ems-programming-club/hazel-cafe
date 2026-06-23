@@ -443,3 +443,104 @@ body{
     color:transparent;
     -webkit-text-fill-color:transparent;
 }
+
+
+/* ==========================
+   HOMEPAGE FAQ SECTION
+========================== */
+
+.homepage-faq{
+    max-width:1400px;
+    margin:auto;
+
+    padding:40px 30px 80px;
+}
+
+.faq-header{
+    text-align:center;
+    margin-bottom:40px;
+}
+
+.faq-header h2{
+    font-size:2.5rem;
+    margin-bottom:12px;
+}
+
+.faq-header p{
+    color:#6b5a4d;
+}
+
+.faq-preview-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:20px;
+}
+
+.faq-preview-card{
+    background:white;
+    padding:25px;
+
+    border-radius:20px;
+
+    box-shadow:
+    0 8px 20px rgba(0,0,0,.05);
+
+    transition:.3s;
+}
+
+.faq-preview-card:hover{
+    transform:translateY(-4px);
+}
+
+.faq-preview-card h3{
+    color:#7c4d2d;
+    margin-bottom:12px;
+}
+
+.faq-preview-card p{
+    color:#5f5248;
+    line-height:1.6;
+}
+
+.faq-button-wrapper{
+    text-align:center;
+    margin-top:35px;
+}
+
+.faq-page-btn{
+    display:inline-block;
+
+    padding:14px 24px;
+
+    border-radius:999px;
+
+    background:#7c4d2d;
+    color:white;
+
+    text-decoration:none;
+    font-weight:600;
+
+    transition:.3s;
+}
+
+.faq-page-btn:hover{
+    background:#5f3920;
+}
+
+@media (max-width:1000px){
+
+    .faq-preview-grid{
+        grid-template-columns:1fr 1fr;
+    }
+}
+
+@media (max-width:700px){
+
+    .faq-preview-grid{
+        grid-template-columns:1fr;
+    }
+
+    .faq-header h2{
+        font-size:2rem;
+    }
+}
