@@ -91,7 +91,7 @@ body{
         border-radius:24px;
     }
 
-    .pill-nav a{
+    .pill-nav ul li a{
         padding:8px 16px;
         font-size:0.85rem;
     }
@@ -264,13 +264,21 @@ body{
 }
 
 .featured-nav{
-    display:flex;
-    justify-content:space-between;
+    display:grid;
+    grid-template-columns:1fr auto 1fr;
     align-items:center;
 
     padding:25px 50px;
 
     background:white;
+}
+
+.featured-nav > div{
+    text-align:center;
+}
+
+.featured-nav > .pill-nav{
+    justify-self:end;
 }
 
 .featured-nav a{
