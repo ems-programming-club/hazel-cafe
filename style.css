@@ -32,6 +32,74 @@ body{
     color:#7b6758;
 }
 
+/* PILL NAVBAR */
+
+.pill-nav{
+    display:flex;
+    justify-content:center;
+
+    padding:20px 0;
+}
+
+.pill-nav ul{
+    display:flex;
+    align-items:center;
+    gap:6px;
+
+    list-style:none;
+
+    background:linear-gradient(
+        135deg,
+        #6b4026,
+        #9d6d4b
+    );
+
+    border-radius:999px;
+
+    padding:8px;
+
+    box-shadow:
+    0 10px 25px rgba(0,0,0,.1);
+}
+
+.pill-nav a{
+    display:block;
+
+    padding:10px 22px;
+
+    border-radius:999px;
+
+    color:white;
+    text-decoration:none;
+    font-weight:600;
+    font-size:0.95rem;
+
+    transition:.3s;
+}
+
+.pill-nav a:hover{
+    background:rgba(255,255,255,.18);
+}
+
+.pill-nav a.active{
+    background:white;
+    color:#7c4d2d;
+}
+
+@media (max-width:700px){
+
+    .pill-nav ul{
+        flex-wrap:wrap;
+        justify-content:center;
+        border-radius:24px;
+    }
+
+    .pill-nav a{
+        padding:8px 16px;
+        font-size:0.85rem;
+    }
+}
+
 /* DASHBOARD */
 
 .dashboard{
@@ -125,11 +193,6 @@ body{
     color:#7c4d2d;
 
     font-weight:600;
-    text-decoration: none;
-    transition: box-shadow 0.8s ease;
-}
-.primary-btn:hover {
-    box-shadow: 0 0 12px 5px #FFFFFF;
 }
 
 /* ACTION CARDS */
@@ -155,12 +218,12 @@ body{
     box-shadow:
     0 8px 20px rgba(0,0,0,.05);
 
-    transition: box-shadow 0.8s ease;
+    transition:.3s;
+    margin: 0 auto;
 }
 
 .action-card:hover{
     transform:translateY(-4px);
-    box-shadow: 0 0 12px 5px #FFFFFF;
 }
 
 .action-card h3{
