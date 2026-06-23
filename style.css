@@ -59,7 +59,7 @@ body{
     0 10px 25px rgba(0,0,0,.1);
 }
 
-.pill-nav a{
+.pill-nav ul li a{
     display:block;
 
     padding:10px 22px;
@@ -74,11 +74,11 @@ body{
     transition:.3s;
 }
 
-.pill-nav a:hover{
+.pill-nav ul li a:hover{
     background:rgba(255,255,255,.18);
 }
 
-.pill-nav a.active{
+.pill-nav ul li a.active{
     background:white;
     color:#7c4d2d;
 }
