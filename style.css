@@ -550,13 +550,14 @@ body{
    FAQ.html css
 ========================== */
 
+
+
 .faq-page{
     background:#f7f2eb;
 }
 
 .faq-hero{
     text-align:center;
-
     padding:80px 20px 50px;
 }
 
@@ -574,43 +575,51 @@ body{
 .faq-container{
     max-width:1000px;
     margin:auto;
-
     padding:0 25px 80px;
-
-    display:grid;
-    gap:20px;
 }
 
 .faq-item{
     background:white;
-
-    padding:25px;
-
     border-radius:20px;
+    margin-bottom:15px;
 
     box-shadow:
-    0 8px 25px rgba(0,0,0,.05);
+    0 8px 20px rgba(0,0,0,.05);
+
+    overflow:hidden;
 }
 
-.faq-item h3{
-    margin-bottom:12px;
+.faq-item summary{
+    list-style:none;
 
+    padding:24px;
+
+    cursor:pointer;
+
+    font-weight:600;
+    font-size:1.05rem;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.faq-item summary::-webkit-details-marker{
+    display:none;
+}
+
+.faq-item summary::after{
+    content:"+";
+    font-size:1.6rem;
     color:#7c4d2d;
+}
+
+.faq-item[open] summary::after{
+    content:"−";
 }
 
 .faq-item p{
-    line-height:1.7;
+    padding:0 24px 24px;
     color:#5f5248;
-}
-
-.faq-link{
-    display:inline-block;
-
-    margin-top:15px;
-
-    text-decoration:none;
-
-    font-weight:600;
-
-    color:#7c4d2d;
+    line-height:1.7;
 }
