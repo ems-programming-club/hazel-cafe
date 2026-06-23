@@ -587,6 +587,9 @@ body{
     color:transparent;
     -webkit-text-fill-color:transparent;
 }
+.image-text:hover {
+    text-shadow: 0 0 5px #FFFFFF;
+}
 
 /* ==========================
    FAQ.html css
