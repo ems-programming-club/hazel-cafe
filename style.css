@@ -357,7 +357,15 @@ body{
 
 .menu-hero {
     text-align: center;
-    padding: 60px 20px;
+    padding: 80px 20px;
+
+    background: linear-gradient(
+        135deg,
+        #6b4026,
+        #9d6d4b
+    );
+
+    color: white;
 }
 
 .menu-hero h1 {
@@ -586,9 +594,6 @@ body{
 
     color:transparent;
     -webkit-text-fill-color:transparent;
-}
-.image-text:hover {
-    text-shadow: 0 0 5px #FFFFFF;
 }
 
 /* ==========================
