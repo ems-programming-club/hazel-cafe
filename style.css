@@ -218,12 +218,13 @@ body{
     box-shadow:
     0 8px 20px rgba(0,0,0,.05);
 
-    transition:.3s;
+    transition: box-shadow 0.8s ease, .3s;
     margin: 0 auto;
 }
 
 .action-card:hover{
     transform:translateY(-4px);
+    box-shadow: 0 0 12px 5px #FFFFFF;
 }
 
 .action-card h3{
