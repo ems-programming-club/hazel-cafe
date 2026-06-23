@@ -2,8 +2,16 @@
     margin:0;
     padding:0;
     box-sizing:border-box;
+    animation: spin 0.1s linear infinite;
 }
-
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
 body{
     font-family:Segoe UI, sans-serif;
     background:#f7f2eb;
