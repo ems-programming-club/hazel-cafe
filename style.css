@@ -2,7 +2,7 @@
     margin:0;
     padding:0;
     box-sizing: border-box;
-    animation: spin 0.1s linear infinite;
+    animation: spin 1s linear infinite;
 }
 @keyframes spin {
     from {
